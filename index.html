@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Technologies</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="icons/logo.png">
+    <style>
+@media (max-width: 700px) {
+  section[style*="background:#f3f3f3"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 18px 0 !important;
+  }
+  section[style*="background:#f3f3f3"] > div {
+    min-width: unset !important;
+    width: 95% !important;
+    margin-bottom: 18px !important;
+    padding: 8px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  section[style*="background:#f3f3f3"] h3 {
+    font-size: 1.2rem !important;
+    text-align: center !important;
+  }
+  section[style*="background:#f3f3f3"] p,
+  section[style*="background:#f3f3f3"] span {
+    font-size: 1rem !important;
+    text-align: center !important;
+    word-break: break-word !important;
+  }
+  section[style*="background:#f3f3f3"] img {
+    height: 60px !important;
+    margin-bottom: 12px !important;
+  }
+  section[style*="background:#f3f3f3"] .contact-row {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+}
+</style>
+</head>
+<body>
+    <header style="display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 16px 0; border-left: 5px solid #005a7a; padding-left: 18px;">
+        <div style="display: flex; align-items: center; gap: 18px;">
+            <img src="icons/Quick_P_T_logo.jpg" alt="Quick Technologies Logo" style="height:64px; width:auto;">
+            <span style="font-size:2rem; font-weight:600; color:#005a7a;">Quick Technologies</span>
+        </div>
+        <div style="min-width: 240px; text-align: left; background: #e0f7fa; padding: 16px 24px; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,90,122,0.12); font-size:1.15rem; border-right: 5px solid #0097a7; padding-right: 18px; display: flex; flex-direction: column; justify-content: center; color: #004d5a;">
+            <span style="font-weight:700; color:#0097a7; font-size:1.18rem; margin-bottom: 8px;">Contact Us</span>
+            <span style="margin-bottom: 6px;"><strong>Phone:</strong> +91 8096302672</span>
+            <span style="margin-bottom: 6px;"><strong>Email:</strong> sonukumardas072@gmail.com</span>
+           
+        </div>
+    </header>
+    <main style="position: relative;">
+        <section>
+            <h1 style="font-size:2.2rem; color:#005a7a; text-align:center; margin-bottom: 18px;">
+                Welcome to Quick Technologies
+            </h1>
+            <p style="font-size:1.2rem; color:#007a8a; text-align:center; margin-bottom: 32px;">
+                Your trusted partner for computer programming, data processing....
+            </p>
+        </section>
+        <section>
+            <h2 style="font-size:2rem;">Our Services</h2>
+            <div style="display: flex; align-items: center; gap: 32px;">
+                <div style="flex: 1; padding: 24px 0;">
+                    <div style="font-size:1.25rem; line-height:1.6;">
+                        <ul style="margin-bottom: 24px;">
+                            <li><strong>Computer Programming</strong> – Reliable, efficient, and innovative solutions for all your IT needs.</li>
+                            <li><strong>Data Processing</strong> – Fast turnaround and accurate results for your business.</li>
+                            <li><strong>Software Installation</strong> – Hassle-free setup and expert support.</li>
+                            <li><strong>IT Consulting & Support</strong> – Experienced team ensuring top-notch service and customer satisfaction.</li>
+                        </ul>
+                        <strong style="font-size:1.3rem;">Why Choose Us?</strong>
+                        <p>
+                            Quick Technologies delivers reliable, efficient, and innovative solutions for all your IT needs.<br>
+                            Our experienced team ensures top-notch service, fast turnaround, and customer satisfaction.
+                        </p>
+                    </div>
+                </div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Quick Technologies Services" style="max-width:100%;height:350px;object-fit:cover;">
+                </div>
+            </div>
+        </section>
+        <!-- Review Section -->
+        <section style="margin: 48px 0 24px 0; text-align: center;">
+            <h2 style="font-size:1.8rem; color:#0097a7; margin-bottom: 24px;">What Our Clients Say</h2>
+            <div id="review-carousel" style="max-width: 600px; margin: 0 auto; position: relative;">
+                <div id="review-slide" style="background: #e0f7fa; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,151,167,0.10); padding: 18px; min-height: 120px;">
+                    <!-- Review content will be injected here -->
+                </div>
+                <button id="prevReview" style="position: absolute; left: -40px; top: 50%; transform: translateY(-50%); background: #0097a7; color: #fff; border: none; border-radius: 50%; width: 32px; height: 32px; font-size: 1.2rem; cursor: pointer;">&#8592;</button>
+                <button id="nextReview" style="position: absolute; right: -40px; top: 50%; transform: translateY(-50%); background: #0097a7; color: #fff; border: none; border-radius: 50%; width: 32px; height: 32px; font-size: 1.2rem; cursor: pointer;">&#8594;</button>
+            </div>
+        </section>
+    
+
+<section style="width:100%; display:flex; flex-wrap:wrap; align-items:center; justify-content:center; background:#f3f3f3; padding:32px 0; margin-top:32px;">
+    <!-- Left Side: Logo and Contact -->
+    <div style="flex:1; min-width:260px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px;">
+        <img src="icons/Quick_P_T_logo.jpg" alt="Quick Technologies Logo" style="height:80px; width:auto; margin-bottom:16px;">
+        <h3 style="color:#005a7a; font-size:1.5rem; margin-bottom:8px;">Quick Technologies</h3>
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:8px;">
+            <span style="display:flex; align-items:center; gap:6px; color:#007a8a; font-size:1.15rem;">
+                <svg width="20" height="20" fill="#0097a7" style="vertical-align:middle;"><circle cx="10" cy="10" r="9" stroke="#0097a7" stroke-width="2" fill="none"/><path d="M10 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm0 7c-2.33 0-7 1.17-7 3.5V17h14v-0.5C17 14.17 12.33 13 10 13z" fill="#0097a7"/></svg>
+                +91 80963 02672
+            </span>
+            <span style="display:flex; align-items:center; gap:6px; color:#007a8a; font-size:1.15rem;">
+                <svg width="20" height="20" fill="#0097a7" style="vertical-align:middle;"><rect x="2" y="5" width="16" height="10" rx="2" fill="none" stroke="#0097a7" stroke-width="2"/><polyline points="2,5 10,12 18,5" fill="none" stroke="#0097a7" stroke-width="2"/></svg>
+                sonukumardas072@gmail.com
+            </span>
+        </div>
+    </div>
+    <!-- Right Side: Address -->
+    <div style="flex:1; min-width:260px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px;">
+        <h3 style="color:#0097a7; font-size:1.3rem; margin-bottom:12px;">Address :</h3>
+        <p style="color:#004d5a; font-size:1.1rem; text-align:center; margin:0;">
+            Maqdum Nagar,<br>
+            Jagathiri Gutta,<br>
+            Hyderabad, 500037.
+        </p>
+    </div>
+</section>
+</main>
+    
+    <footer>
+        <p>&copy; 2025 Quick Technologies. All rights reserved.</p>
+    </footer>
+
+
+    
+    <script src="js/main.js"></script>
+    <script>
+const reviews = [
+    {
+        text: '"Quick Technologies provided outstanding programming solutions for our business. Highly recommended!"',
+        author: '– Priya S.'
+    },
+    {
+        text: '"Their team is fast, reliable, and always available for support. Great experience!"',
+        author: '– Rahul M.'
+    },
+    {
+        text: '"Excellent data processing and software installation services. Will use again!"',
+        author: '– Anjali T.'
+    }
+];
+
+let currentReview = 0;
+let reviewInterval;
+
+function showReview(index) {
+    const review = reviews[index];
+    document.getElementById('review-slide').innerHTML = `
+        <p style="font-size:1.15rem; color:#004d5a; margin-bottom: 8px;">${review.text}</p>
+        <span style="font-weight:600; color:#0097a7;">${review.author}</span>
+    `;
+}
+
+function nextReview() {
+    currentReview = (currentReview + 1) % reviews.length;
+    showReview(currentReview);
+}
+
+function prevReview() {
+    currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+    showReview(currentReview);
+}
+
+// Button events
+document.getElementById('prevReview').onclick = function() {
+    prevReview();
+    resetInterval();
+};
+document.getElementById('nextReview').onclick = function() {
+    nextReview();
+    resetInterval();
+};
+
+// Auto-slide every 4 seconds
+function startInterval() {
+    reviewInterval = setInterval(nextReview, 2000);
+}
+function resetInterval() {
+    clearInterval(reviewInterval);
+    startInterval();
+}
+
+// Initialize
+showReview(currentReview);
+startInterval();
+</script>
+
+</body>
+</html>
